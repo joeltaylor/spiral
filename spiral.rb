@@ -1,17 +1,18 @@
 # sq = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]
 # ans = [1, 2, 3, 4 ,8, 12, 16, 15, 14, 13, 9, 5, 6, 7, 11, 10  ]
 
-# def show me, direction=:norm
-#   if direction == :norm
-#     print " " +  me.join(' ')
-#   elsif direction == :last
-#     print  " " + me.last.to_s
-#   elsif direction == :first
-#     print " " + me.first.to_s
-#   elsif direction == :reverse
-#     print " " + me.reverse.join(' ')
-#   end
 
+# This wasn't really necessary, just prettier
+# def show sqaure, direction=:norm
+#   if direction == :norm
+#     print " " +  square.join(' ')
+#   elsif direction == :last
+#     print  " " + square.last.to_s
+#   elsif direction == :first
+#     print " " + square.first.to_s
+#   elsif direction == :reverse
+#     print " " + square.reverse.join(' ')
+#   end
 # end
 
 # puts sq.join(' ')
@@ -37,9 +38,9 @@
 
 
 
-# Turning above into a method that can accept any size matrix
+# Turning logic above into a method that can accept any size matrix
 
-sq1 = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]
+sq1 = [[1,2,3,4,55,66],[7,8],[9,10,11,12],[13,14,15,16]]
 sq2 = [[1,2,3,4,5,6,7,8,9,10],[11,12,13,14,15,16,17,18,19,20],[21,22,23,24,25,26,27,28,29,30],[31,32,33,34,35,36,37,38,39,40],
 [41,42,43,44,45,46,47,48,49,50],[51,52,53,54,55,56,57,58,59,60],[61,62,63,64,65,66,67,68,69,70],[71,72,73,74,75,76,77,78,79,80],
 [81,82,83,84,85,86,87,88,89,90],[91,92,93,94,95,96,97,98,99,100]]
@@ -79,9 +80,7 @@ def spiral sq
 end
 
 puts "First array is " + sq1.inspect
-puts "Second array is " + sq2.inspect
 
 spiral sq1
 
-spiral sq2
 
